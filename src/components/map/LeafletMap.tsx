@@ -118,7 +118,7 @@ export default function LeafletMap({
     // Add markers for each point
     points.forEach(point => {
       const marker = L.marker([point.lat, point.lng], {
-        icon: point.tipo === 'coleta' ? coletaIcon : abrigoIcon,
+        icon: point.tipo === 'abrigo' ? abrigoIcon : coletaIcon,
         title: point.nome,
       });
 
@@ -130,8 +130,8 @@ export default function LeafletMap({
             <p class="flex items-start gap-2">
               <span class="font-semibold min-w-[80px]">Tipo:</span>
               <span class="flex items-center gap-1">
-                <span class="w-3 h-3 rounded-full ${point.tipo === 'coleta' ? 'bg-red-600' : 'bg-yellow-600'}"></span>
-                ${point.tipo === 'coleta' ? 'Ponto de Coleta' : 'Abrigo'}
+                <span class="w-3 h-3 rounded-full ${point.tipo === 'abrigo' ? 'bg-yellow-600' : 'bg-red-600'}"></span>
+                ${point.tipo === 'abrigo' ? 'Abrigo' : 'Ponto de Coleta'}
               </span>
             </p>
             <p class="flex items-start gap-2">
