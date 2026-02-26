@@ -32,6 +32,12 @@ const helpLinks = [
     icon: "⚡",
     title: "Ajuda Imediata",
     description: "Sistema de ajuda rápida e emergencial"
+  },
+  {
+    href: "https://studio--studio-9117009730-5014f.us-central1.hosted.app",
+    icon: "🤖",
+    title: "IA Monitoramento",
+    description: "Inteligência artificial para monitoramento de áreas de risco"
   }
 ];
 
