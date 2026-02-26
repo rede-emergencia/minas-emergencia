@@ -38,6 +38,12 @@ const helpLinks = [
     icon: "🤖",
     title: "IA Monitoramento",
     description: "Inteligência artificial para monitoramento de áreas de risco"
+  },
+  {
+    href: "https://emergencia-mg.netlify.app",
+    icon: "🚨",
+    title: "Emergência MG",
+    description: "Portal de emergências para Minas Gerais"
   }
 ];
 
