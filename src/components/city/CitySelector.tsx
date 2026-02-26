@@ -5,9 +5,11 @@ export function CitySelector() {
   const cities = getAllEnabledCities();
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+    <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 max-w-xl mx-auto">
       {cities.map((city) => (
-        <CityCard key={city.slug} city={city} />
+        <div key={city.slug} className="w-full sm:w-56">
+          <CityCard city={city} />
+        </div>
       ))}
     </div>
   );

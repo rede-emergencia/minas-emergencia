@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Poppins, Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import { InstallPrompt, OfflineIndicator } from '@/components/pwa/InstallPrompt';
 import './global.css';
@@ -8,6 +8,12 @@ const poppins = Poppins({
   weight: ['400', '600', '700', '900'],
   subsets: ['latin'],
   variable: '--font-poppins',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
   display: 'swap',
 });
 
@@ -76,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={poppins.variable}>
+    <html lang="pt-BR" className={`${poppins.variable} ${inter.variable}`}>
       <body className="antialiased">
         {children}
         <InstallPrompt />

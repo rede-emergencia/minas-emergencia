@@ -34,6 +34,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        body: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       animation: {
         'pulse-warning': 'pulse-warning 2s ease-in-out infinite',
