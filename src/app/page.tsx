@@ -67,7 +67,7 @@ export default function Home() {
               </a>
 
               <a
-                href="sosminas.growberry.com.br/"
+                href="https://sosminas.growberry.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-white hover:bg-gray-50 rounded-lg p-4 transition-all duration-200 transform hover:scale-105 shadow-lg"
