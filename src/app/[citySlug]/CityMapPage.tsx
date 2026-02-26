@@ -93,9 +93,6 @@ export function CityMapPage({ city }: { city: City }) {
             <p className="mt-4 text-gray-600 font-medium">
               Carregando pontos de {city.name}...
             </p>
-            <p className="mt-2 text-sm text-gray-500">
-              Conectando em tempo real...
-            </p>
           </div>
         </div>
       </div>
@@ -156,13 +153,6 @@ export function CityMapPage({ city }: { city: City }) {
             abrigoCount={abrigoCount}
           />
 
-          {/* Real-time indicator - Hidden on mobile to save space */}
-          {!isMobile && (
-            <div className="flex items-center justify-center gap-2 text-xs text-gray-500 mt-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>Atualizações em tempo real ativas</span>
-            </div>
-          )}
         </div>
 
         {/* Map + Form Container */}
