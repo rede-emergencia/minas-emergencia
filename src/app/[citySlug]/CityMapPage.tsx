@@ -31,8 +31,8 @@ export function CityMapPage({ city }: { city: City }) {
   const [mapPickerMode, setMapPickerMode] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState<{ lat: number; lng: number } | null>(null);
 
-  const coletaCount = points.filter(p => p.tipo === 'coleta').length;
   const abrigoCount = points.filter(p => p.tipo === 'abrigo').length;
+  const coletaCount = points.length - abrigoCount;
 
   // Check if mobile
   useEffect(() => {
