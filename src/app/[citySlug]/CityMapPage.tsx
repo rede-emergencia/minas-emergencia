@@ -76,11 +76,19 @@ export function CityMapPage({ city }: { city: City }) {
   const handleMapClick = (lat: number, lng: number) => {
     if (mapPickerMode) {
       setSelectedLocation({ lat, lng });
+      // Reopen modal on desktop so user can continue filling the form
+      if (!isMobile) {
+        setIsFormOpen(true);
+      }
     }
   };
 
   const handleMapPickerToggle = (enabled: boolean) => {
     setMapPickerMode(enabled);
+    // Close modal on desktop so user can click the map
+    if (enabled && !isMobile) {
+      setIsFormOpen(false);
+    }
   };
 
   if (loading && points.length === 0) {
