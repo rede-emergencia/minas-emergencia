@@ -83,6 +83,24 @@ export default function Home() {
                   <span className="text-gray-400">→</span>
                 </div>
               </a>
+
+              <a
+                href="https://sosjf.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white hover:bg-gray-50 rounded-lg p-4 transition-all duration-200 transform hover:scale-105 shadow-lg"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">🙏</span>
+                    <div>
+                      <h3 className="font-bold text-gray-900">SOS JF</h3>
+                      <p className="text-sm text-gray-600">Portal de ajuda para Juiz de Fora</p>
+                    </div>
+                  </div>
+                  <span className="text-gray-400">→</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
